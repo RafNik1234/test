@@ -1,15 +1,10 @@
-name: Testing and linting
+name: Testing
 
 on:
-  pull_request:
-    paths-ignore:
-      - '**.md'
-  push:
-    branches:
-      - main
-    paths-ignore:
-      - '**.md'
-
+  workflow_run:
+    workflows: ["Transform tokens send from figma"]
+    types: [completed]
+    
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -26,8 +21,3 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - run: npm install
       - run: npm test
-      - name: Coveralls
-        uses: coverallsapp/github-action@v1.1.2
-        with:
-          path-to-lcov: "./tests/unit/coverage/lcov.info"
-          github-token: ${{ secrets.GITHUB_TOKEN }}
