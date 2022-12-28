@@ -1,16 +1,10 @@
-import { Button, useTheme } from "@mui/material";
+import { Btn } from "./components/Btn";
 
 function App() {
-  const theme = useTheme();
   return (
-    <Button
-      sx={{
-        color: theme?.color?.colors?.text?.secondary?.value,
-        background: theme?.color?.colors?.grey[200]?.value,
-      }}
-    >
-      click
-    </Button>
+    <>
+      <Btn />
+    </>
   );
 }
 
