@@ -1,5 +1,5 @@
 const StyleDictionary = require("style-dictionary");
-const baseConfig = require("../config.json");
+const baseConfig = require("./config.json");
 
 StyleDictionary.registerTransform({
   name: "size/px",
