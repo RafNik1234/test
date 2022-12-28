@@ -5,8 +5,8 @@ function App() {
   return (
     <Button
       sx={{
-        color: theme.color?.colors.black?.value,
-        background: theme.color?.colors.grey[600]?.value,
+        color: theme.color.colors.text.secondary.value,
+        background: theme.color.colors.grey[200]?.value,
       }}
     >
       click
