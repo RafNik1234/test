@@ -13,6 +13,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "^5.0.1",
+    "stratos-materialui-demo": "^0.0.1",
     "style-dictionary": "^3",
     "web-vitals": "^2.1.4"
   },
@@ -21,7 +22,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "transform-tokens": "node ./transformTokens.js",
+    "transform-tokens": "node ./src/transformTokens.js",
     "transform:android": "node ./examples/android/build.js",
     "transform:ios": "node ./examples/ios/build.js"
   },
